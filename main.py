@@ -1,10 +1,10 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from models import FastAPIVote, FastAPIProduct
-import numpy as np
+
 
 SQLALCHEMY_DATABASE_URL = "postgresql://maciej:maciej@database:5432/DiceAndTiles"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
