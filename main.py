@@ -14,6 +14,12 @@ Base = declarative_base()
 
 app = FastAPI()
 
+@app.get("/")
+async def root():   
+        result = "hello world"      
+        return {"message": result}
+   
+
 # Dependency to get the SQLAlchemy session
 def get_db():
     db = SessionLocal()
