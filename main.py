@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from models import FastAPIVote, FastAPIProduct
 
 
-SQLALCHEMY_DATABASE_URL = "postgresql://maciej:maciej@database:5432/DiceAndTiles"
+SQLALCHEMY_DATABASE_URL = "postgresql://maciej:maciej@localhost:5432/diceandtiles"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
