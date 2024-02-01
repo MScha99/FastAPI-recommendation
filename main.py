@@ -19,7 +19,7 @@ async def root():
         result = "hello world"      
         return {"message": result}
 
-@app.get("/recommend")
+@app.get("/recommend2")
 async def root():   
         result = "hello world recommend"      
         return {"message": result}
