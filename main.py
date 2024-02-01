@@ -18,6 +18,11 @@ app = FastAPI()
 async def root():   
         result = "hello world"      
         return {"message": result}
+
+@app.get("/recommend")
+async def root():   
+        result = "hello world recommend"      
+        return {"message": result}
    
 
 # Dependency to get the SQLAlchemy session
